@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Control</string>
+    <string name="app_name2">Search</string>
+    <string name="app_name3">Change Password</string>
+    <string name="app_name4">Add Account</string>
+    <string name="app_name5">Delete Account</string>
+</resources>
