@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6CA6CD</color>
+    <color name="colorPrimaryDark">#6CA6CD</color>
+    <color name="colorAccent">#6CA6CD</color>
+    <color name="buttonbackground">#FF737373</color>
+    <color name="Editdiarybackground">#FFE7BA</color>
+    <color name="Editdiarycolor">#8B8989</color>
+</resources>
