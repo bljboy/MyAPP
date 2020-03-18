@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Message
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.toast
@@ -41,10 +42,10 @@ class MainActivity : AppCompatActivity() {
                 loading_PB.setVisibility(View.VISIBLE)
                 Thread {
                     Thread.sleep(2000)
-                    finish()
                     var intent = Intent()
                     intent.setClass(this, Edit_SecondActivity::class.java)
                     startActivity(intent)
+                    finish()
 
                 }.start()
 
@@ -71,7 +72,7 @@ class MainActivity : AppCompatActivity() {
             account_ET.setText(shared.getString("account", null))
             password_ET.setText(shared.getString("account", null))
             Remerberpassword_CB.setChecked(true)
-            account_ET.setCursorVisible(false)
+            account_ET.setCursorVisible(false)//不显示光标
         }
         account_ET.setOnClickListener(View.OnClickListener {
             account_ET.setCursorVisible(true)
