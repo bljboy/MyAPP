@@ -14,15 +14,18 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:paddingBottom="10dp"
         android:id="@+id/Editdiary_TV"
         android:layout_width="match_parent"
         android:layout_height="450dp"
         android:background="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:gravity="left"
         android:paddingLeft="10dp"
-        android:textSize="37dp"
+        android:paddingBottom="10dp"
+        android:text="sss"
         android:textColor="@color/Editdiarycolor"
+        android:textSize="37dp"
         tools:ignore="MissingConstraints" />
 
     <Button

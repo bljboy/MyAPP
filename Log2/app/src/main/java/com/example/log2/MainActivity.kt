@@ -71,18 +71,18 @@ class MainActivity : AppCompatActivity() {
             }
             val CheckBoxLogin: Boolean = Cb_KeepPassword.isChecked
             if (CheckBoxLogin) {
-                val editor: SharedPreferences.Editor = sp!!.edit()
-                editor.putString("uname", user)
-                editor.putString("upswd", password)
-                editor.putBoolean("checkboxBoolean", true)
-                editor.commit()
-            } else {
-                val editor: SharedPreferences.Editor = sp!!.edit()
-                editor.putString("uname", null)
-                editor.putString("upswd", null)
-                editor.putBoolean("checkboxBoolean", false)
-                editor.commit()
-            }
+            val editor: SharedPreferences.Editor = sp!!.edit()
+            editor.putString("uname", user)
+            editor.putString("upswd", password)
+            editor.putBoolean("checkboxBoolean", true)
+            editor.commit()
+        } else {
+            val editor: SharedPreferences.Editor = sp!!.edit()
+            editor.putString("uname", null)
+            editor.putString("upswd", null)
+            editor.putBoolean("checkboxBoolean", false)
+            editor.commit()
+        }
 
         })
         //自动登录按钮
