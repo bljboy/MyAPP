@@ -4,14 +4,10 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Message
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.toast
-import kotlin.concurrent.thread
 
 
 class MainActivity : AppCompatActivity() {
